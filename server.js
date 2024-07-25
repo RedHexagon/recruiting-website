@@ -7,9 +7,9 @@ app.use(cors());
 require("dotenv").config();
 
 if (process.env.PROD) {
-  app.use(express.static(path.join(__dirname, "./frontend/build")));
+  app.use(express.static(path.join(__dirname, "./frontend/dist")));
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
+    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
   });
 } else {
   app.get("/", async (req, res) => {
