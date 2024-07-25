@@ -1,0 +1,23 @@
+{
+  "name": "recruiting-website-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "cd ./frontend && npm ci",
+    "start": "PROD=true node server.js",
+    "backend": "node --watch server.js",
+    "stableBackend": "node server.js",
+    "frontend": "npm run start --prefix frontend",
+    "both": "concurrently \"npm run stableBackend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
