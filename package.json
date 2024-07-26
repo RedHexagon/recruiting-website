@@ -9,6 +9,7 @@
     "backend": "node --watch server.js",
     "stableBackend": "node server.js",
     "frontend": "npm run start --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
     "both": "concurrently \"npm run stableBackend\" \"npm run frontend\""
   },
   "keywords": [],
