@@ -1,3 +1,7 @@
+.logo {
+  height: 10vh;
+}
+
 .container {
   /* display: grid;
   grid-template-columns: 33% 66%; */
@@ -8,13 +12,11 @@
 .large-title {
   grid-column: 2 / 3;
 }
-.logo {
-  height: 100px;
-  padding: 1.5em;
+.button-to-add-wechat {
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.button-to-add-wechat:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 

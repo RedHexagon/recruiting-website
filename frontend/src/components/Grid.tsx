@@ -9,9 +9,7 @@ export default function Grid() {
     <>
       <div className="container">
         <div className="logo">
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </div>
         <div className="large-title">
           <h2>美国Offer - 在美CS学生的福音</h2>
@@ -47,6 +45,7 @@ export default function Grid() {
             <div>
               ) ) ) ) ) ) ) ) ){" "}
               <button
+                className="button-to-add-wechat"
                 onClick={() => {
                   setButtonClicked(true);
                 }}
