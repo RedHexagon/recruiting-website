@@ -43,7 +43,7 @@ export default function Grid() {
             <img src={wechatCode} className="wechatCode" alt="微信二维码" />
           ) : (
             <div>
-              ) ) ) ) ) ) ) ) ){" "}
+              ) ) ) ) ) ) )
               <button
                 className="button-to-add-wechat"
                 onClick={() => {
@@ -51,8 +51,8 @@ export default function Grid() {
                 }}
               >
                 加导师微信免费咨询
-              </button>{" "}
-              ( ( ( ( ( ( ( ( ( (
+              </button>
+              ( ( ( ( ( ( (
             </div>
           )}
         </div>
